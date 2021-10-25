@@ -1,0 +1,114 @@
+* {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.contentWrapper {
+  box-sizing: border-box;
+  background-color: #ffeb3a;
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 100px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.title h1 {
+  position: relative;
+  font-size: 100px;
+  color: #ffee55;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.title h1::before {
+  position: absolute;
+  left: -2px;
+  top: 0;
+  background: -webkit-radial-gradient(circle, #ffe703 0%, #76ff76 49%, rgba(255, 0, 0, 0.03405112) 64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  content: 'King Gnu!!';
+  margin-right: -24px;
+  clip-path: ellipse(50px 50px at 0% 50%);
+  -webkit-clip-path: ellipse(50px 50px at 0% 50%);
+  animation: spotlight 5s infinite;
+}
+.videoWrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+.videoSection {
+  width: 100%;
+  height: 0;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 75%;
+}
+.videoSection iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.swiper-container {
+  background-color: #ffeb3a;
+  margin: 0 auto;
+  left: 0;
+  width: 80%;
+}
+.inner-container {
+  padding: 0 100px;
+}
+.swiper {
+  position: relative;
+  overflow: hidden;
+  margin: 100px auto;
+  width: 100%;
+  height: 500px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background: url(/useForTest/img/disco01.jpg) no-repeat center / 500px 500px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes spotlight {
+  0% {
+    clip-path: ellipse(100px 100px at 0% 50%);
+    -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+  }
+  50% {
+    clip-path: ellipse(100px 100px at 0% 50%);
+    -webkit-clip-path: ellipse(100px 100px at 100% 50%);
+  }
+  100% {
+    clip-path: ellipse(100px 100px at 0% 50%);
+    -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+  }
+}
